@@ -19,11 +19,6 @@
       "src": "image/logo96.png",
       "sizes": "96x96",
       "type": "image/png"
-    },
-    {
-      "src": "image/logo512.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
   ],
   "start_url": ".",
