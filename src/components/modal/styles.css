@@ -1,0 +1,91 @@
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+
+    background:rgba(0,0,0,0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.modal-overlay .modal {
+    background: #f1f1f1;
+    width: 95%;
+    padding: 2.4rem;
+    max-width: 500px; 
+    border-radius: 0.2rem;
+
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay .modal .input-group {
+    margin-bottom: 0.8rem;
+}
+
+.modal-overlay .modal .input-group input {
+    padding: 0.9rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: 100%;
+}
+
+.modal-overlay .modal .input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-overlay .modal .input-group.actions button,
+.modal-overlay .modal .input-group.actions .button.cancel {
+    width: 48%;
+    border-radius: 0.25rem;
+    height: 2rem;
+
+    cursor: pointer;
+}
+
+.modal-overlay .modal .input-group.actions .button.cancel {
+    color: red;
+    border: 2px red solid;
+    border-radius: 0.25rem;
+    text-decoration: none;
+
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.6;
+}
+
+.modal-overlay .modal .input-group.actions .button.cancel:hover {
+    opacity: 1;
+}
+
+.modal-overlay .modal .input-group.actions button {
+    background: #7424cf;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    height: 50px;
+}
+
+.modal-overlay .modal .input-group.actions button:hover {
+    background: #651bbb;
+}
+
+.modal-overlay .modal .input-group small {
+    opacity: 0.7;
+}
