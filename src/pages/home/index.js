@@ -6,7 +6,6 @@ import NumberString from 'number-string';
 import currencyFormatter from 'currency-formatter';
 import { format } from 'date-fns';
 
-
 import './styles.css';
 import Logo from '../../assents/logo.svg';
 import { BiMoney } from 'react-icons/bi';
