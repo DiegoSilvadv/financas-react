@@ -4,6 +4,7 @@ import Modal from '../../components/modal';
 
 import NumberString from 'number-string';
 import currencyFormatter from 'currency-formatter';
+import { format } from 'date-fns';
 
 
 import './styles.css';
@@ -111,7 +112,7 @@ export default function Home() {
                                                 <td className="incomes">{currencyFormatter.format(data.value, { locale: 'PT-br' })}</td> 
                                                 : <td className="expenses">{currencyFormatter.format(data.value, { locale: 'PT-br' })}</td>
                                             }
-                                            <td>{data.date}</td>
+                                            <td>{format(new Date(data.date), 'dd/MM/yyyy')}</td>
                                             <td>
                                                 <button onClick={(e) => RemoveStorage(data, index)}>
                                                     <FiTrash color="#ca351b" size={25} />
